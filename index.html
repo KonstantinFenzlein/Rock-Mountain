@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Mountain</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Nur PT Sans laden, die anderen Schriften wurden nicht verwendet-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Skip-Link: Tastaturnutzer können die Navigation überspringen-->
+    <a href="#main" class="skipLink">Skip to content</a>
+
+    <div class="aot">
+      <header>
+        <a href="#" class="logoLink">
+          <img src="./img/logo.png" alt="Rock Mountain – Home" width="500" height="355" />
+        </a>
+        <nav aria-label="Main">
+          <ul class="navList">
+            <li><a class="navLink" href="#">HOME</a></li>
+            <li><a class="navLink" href="#">LOCATIONS</a></li>
+            <li><a class="navLink" href="#">ABOUT</a></li>
+            <li><a class="navLink" href="#">CONTACT</a></li>
+          </ul>
+          <!--Social Icons sind echte Links, damit sie per Tastatur erreichbar sind-->
+          <ul class="socialList">
+            <li>
+              <a href="#" class="socialLink" aria-label="Facebook">
+                <img src="./img/facebook_white.png" alt="" class="navImage" width="62" height="112" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socialLink" aria-label="Instagram">
+                <img src="./img/instagram_white.png" alt="" class="navImage" width="110" height="112" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socialLink" aria-label="Twitter">
+                <img src="./img/twitter_white.png" alt="" class="navImage" width="128" height="106" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="hero" id="main" tabindex="-1">
+        <h1>ROCK MOUNTAIN</h1>
+        <p class="tagline">Discover the best live music</p>
+        <a href="#" class="button">UPCOMING SHOW</a>
+      </div>
+    </div>
+
+    <main>
+      <section class="section-quicklinks" aria-label="Quick links">
+        <!--Bilder sind dekorativ (alt=""), der Linktext beschreibt das Ziel bereits-->
+        <a href="#" class="quickLink">
+          NEWS
+          <img src="./img/category1.png" alt="" width="386" height="359" loading="lazy" />
+        </a>
+        <a href="#" class="quickLink">
+          ALBUM
+          <img src="./img/category2.png" alt="" width="772" height="718" loading="lazy" />
+        </a>
+        <a href="#" class="quickLink">
+          STORE
+          <img src="./img/category3.png" alt="" width="774" height="718" loading="lazy" />
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Icons partly from
+        <a href="https://icons8.com">https://icons8.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
